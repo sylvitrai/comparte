@@ -23,7 +23,7 @@ def title(title: str):
                     
                     pretty_print(Style.RESET_ALL + get_string('config_saved'), 
                                  "success", "sys0")
-                except Exception as e:
+                except Exception as e:#compatra muchacho
                     pretty_print(f"Error saving configfile: {e}" + str(e), 
                                  "error", "sys0")
                     pretty_print("Config won't be carried to the next version",
