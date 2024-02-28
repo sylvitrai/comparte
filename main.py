@@ -12,7 +12,7 @@ def title(title: str):
         this escape sequence to change
         the console window title
         """
-        try:
+        try:#use this later
             print('\33]0;' + title + '\a', end='')
             sys.stdout.flush()
         except Exception as e:
